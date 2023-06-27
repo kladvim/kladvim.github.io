@@ -8,7 +8,11 @@
 </head>
 <script type="text/javascript">
     Telegram.WebApp.ready();
-    Telegram.WebApp.MainButton.setText('OK').show().onClick(Telegram.WebApp.close());
+    Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
+        const data = "data123";
+        Telegram.WebApp.sendData(data);
+        Telegram.WebApp.close();
+    });
 </script>
 <body>
 <pre id="json" ></pre>
